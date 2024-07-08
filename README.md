@@ -1,4 +1,4 @@
-#Newsletter Subscription Form
+##Newsletter Subscription Form
 
 This project implements a visually captivating and interactive newsletter subscription form for a hypothetical company named 'BrewTech', designed to keep users informed about the latest news and exclusive offers. The form leverages a background animation of moving mailbox images, enhancing the visual experience, and uses Google Sheets to store subscriber data through Google Apps Script.
 
