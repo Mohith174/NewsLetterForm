@@ -9,7 +9,7 @@ This project implements a visually captivating and interactive newsletter subscr
 - **Real-time Feedback**: Provides immediate user feedback upon subscription.
 
 
-## Demo Pages & Spread Sheet of User entries Links
+## Demo Page Access & User entry Spreadsheet
 - https://mohith174.github.io/NewsLetterForm/
 - https://docs.google.com/spreadsheets/d/1rI16rdynIJGn9QDKVKc6PjL3KUnUlt7_gchhyOd68hU/edit?gid=0#gid=0
 
