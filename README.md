@@ -10,7 +10,7 @@ This project implements a visually captivating and interactive newsletter subscr
 
 
 ## Demo Pages & Spread Sheet of User entries Links
-- 
+- https://mohith174.github.io/NewsLetterForm/
 - https://docs.google.com/spreadsheets/d/1rI16rdynIJGn9QDKVKc6PjL3KUnUlt7_gchhyOd68hU/edit?gid=0#gid=0
 
 
