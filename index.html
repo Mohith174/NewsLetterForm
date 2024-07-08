@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Newsletter Subscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Mailbox images for the top line -->
+    <div class="mail-bg mail-bg1"></div>
+    <div class="mail-bg mail-bg2"></div>
+    <div class="mail-bg mail-bg3"></div>
+
+    <!-- Mailbox images for the middle line -->
+    <div class="mail-bg mail-bg4"></div>
+    <div class="mail-bg mail-bg5"></div>
+    <div class="mail-bg mail-bg6"></div>
+
+    <!-- Mailbox images for the bottom line -->
+    <div class="mail-bg mail-bg7"></div>
+    <div class="mail-bg mail-bg8"></div>
+    <div class="mail-bg mail-bg9"></div>
+
+    <!-- Container for the form -->
+    <div class="container">
+        <h3>Welcome to BrewTech</h3>
+        <h1>Subscribe to Our Newsletter</h1>
+        <p>Stay updated with the latest news and exclusive offers.</p>
+        <form name='submit-to-google-sheet' novalidate>
+            <input type="text" name="Name" placeholder="Full Name" required>
+            <input type="email" name="Email" placeholder="Email Address" required>
+            <select name="Preference">
+                <option value="">Select Your Interest</option>
+                <option value="Technology">Technology</option>
+                <option value="Software">Software</option>
+                <option value="News">General News</option>
+            </select>
+            <div class="checkbox">
+                <input type="checkbox" id="agree" required>
+                <label for="agree">I agree to the terms and conditions</label>
+            </div>
+            <button type="submit"><img src="Images/send-icon.png" alt="Send Icon" width="20"> Subscribe</button>
+            <span id="message"></span>
+        </form>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

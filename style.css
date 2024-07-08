@@ -1,0 +1,158 @@
+/* Basic resets, typography, and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #70e1f5, #ffd194);
+    overflow: hidden; /* Prevents scrolling due to background animation */
+}
+
+/* Animated mailbox backgrounds, general settings */
+.mail-bg {
+    position: absolute;
+    left: -300px; /* Start off-screen */
+    width: 200px;
+    height: 100vh; /* Full height for each image */
+    background: url('Images/mailbox.png') no-repeat center center;
+    background-size: contain;
+    animation: slideIn 25s linear infinite;
+}
+
+/* Top line mailboxes */
+.mail-bg1, .mail-bg2, .mail-bg3 {
+    top: -33vh;
+}
+
+/* Middle line mailboxes */
+.mail-bg4, .mail-bg5, .mail-bg6 {
+    top: 0vh; /* Positioned one-third down the screen */
+}
+
+/* Bottom line mailboxes */
+.mail-bg7, .mail-bg8, .mail-bg9 {
+    top: 33vh; /* Positioned two-thirds down the screen */
+}
+
+/* Staggering animations within each line */
+.mail-bg2, .mail-bg5, .mail-bg8 {
+    animation-delay: -5s;
+}
+
+.mail-bg3, .mail-bg6, .mail-bg9 {
+    animation-delay: -10s;
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(150vh); }
+}
+
+/* Container and form styling as previously defined */
+.container {
+    position: relative;
+    z-index: 10; /* Ensures the form stays above the animated background */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Styling headings and paragraph */
+h3 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h1 {
+    margin-top: 0.5em;
+    font-size: 28px;
+    color: #555;
+}
+
+p {
+    color: #666;
+    margin-bottom: 2em;
+    font-weight: lighter;
+}
+
+/* Form Styling */
+form {
+    display: grid;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+select {
+    cursor: pointer;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 76, 69, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button img {
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        box-shadow: none;
+    }
+}
