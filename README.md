@@ -24,5 +24,5 @@ cd brewtech-newsletter
 ```
 
 ## Setup
-Form Handling by Jamie Wilson: Form to Google Sheets (https://github.com/jamiewilson/form-to-google-sheets)
-Google Apps Script: Google Developers
+- Form Handling by Jamie Wilson: Form to Google Sheets (https://github.com/jamiewilson/form-to-google-sheets)
+- Google Apps Script: Google Developers
